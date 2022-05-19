@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact.ContactFragment"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:layout_width="253dp"
+        android:layout_height="955dp"
+        android:src="@drawable/nuotrauka" />
+
+    <LinearLayout
+        android:layout_width="516dp"
+        android:layout_height="213dp">
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="346dp"
+        android:layout_height="532dp"
+        android:lines="17"
+        android:maxLines="17"
+        android:text="Programos kūrėjų kontaktai:\n
+        Karolio Dirgėlo\n\n
+Telefono numeris\n 865746282\n \n
+
+         Luko Mečionio\n\n
+Telefono numeris\n
+864878277\n\n
+Su mumis galite susisiekti taip pat paštu car4umanagers@gmail.com
+"
+        android:textColor="@color/white"
+
+        android:textSize="22sp" />
+
+
+</FrameLayout>

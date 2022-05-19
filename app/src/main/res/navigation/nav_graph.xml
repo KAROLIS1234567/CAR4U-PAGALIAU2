@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication.home.HomeFragment"
+        android:label="TESTAS"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_fragment2"
+            app:destination="@id/nav_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.myapplication.contact.ContactFragment"
+        android:label="KONTAKTAI"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.myapplication.info.InfoFragment"
+        android:label="Apie mus "
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/nav_fragment2"
+        android:name="com.example.myapplication.Fragment2"
+        android:label="TESTAS"
+        tools:layout="@layout/fragment_2">
+        <action
+            android:id="@+id/action_fragment2_to_nav_fragment3"
+            app:destination="@id/nav_fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fragment3"
+        android:name="com.example.myapplication.Fragment3"
+        android:label="TESTAS"
+        tools:layout="@layout/fragment_3" />
+
+</navigation>

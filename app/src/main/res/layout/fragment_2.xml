@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Fragment2">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/lytis"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginStart="42dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="266dp"
+           android:text="Lytis"
+           android:textSize="18sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.118"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <RadioGroup
+           android:id="@+id/radioGroup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/lytis"
+           android:layout_alignStart="@+id/lytis"
+           android:orientation="vertical"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.834"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <RadioButton
+               android:id="@+id/vyras"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/vyras"
+               android:textColor="#424242" />
+
+           <RadioButton
+               android:id="@+id/moteris"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/moteris" />
+
+           <RadioButton
+               android:id="@+id/kita"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/kita"
+               android:textColor="#37474F" />
+
+       </RadioGroup>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+           android:id="@+id/tILBudget"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/radioGroup"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginEnd="20dp">
+
+           <AutoCompleteTextView
+               android:id="@+id/autoCompleteTextViewBudget"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:inputType="none"
+               android:text="@string/turima_suma_your_budget" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+           android:id="@+id/tILAge"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tILBudget"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginEnd="20dp"
+           android:layout_marginTop="20dp">
+
+           <AutoCompleteTextView
+               android:id="@+id/autoCompleteTextViewAge"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:inputType="none"
+               android:text="Amžius" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+           android:id="@+id/tILUsedForDriving"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tILAge"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginEnd="20dp"
+           android:layout_marginTop="20dp">
+
+           <AutoCompleteTextView
+               android:id="@+id/autoCompleteTextViewUsedForDriving"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:inputType="none"
+               android:text="car will be used for driving" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+           android:id="@+id/tILCarSize"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tILUsedForDriving"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginEnd="20dp"
+           android:layout_marginTop="20dp">
+
+           <AutoCompleteTextView
+               android:id="@+id/autoCompleteTextViewCarSize"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:inputType="none"
+               android:text="size of the car" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+           android:id="@+id/tILDriveWheels"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tILCarSize"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginEnd="20dp"
+           android:layout_marginTop="20dp">
+
+           <AutoCompleteTextView
+               android:id="@+id/autoCompleteTextViewDriveWheels"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:inputType="none"
+               android:text="drive wheels" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+           android:id="@+id/tILQuestionPriority"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tILDriveWheels"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginEnd="20dp"
+           android:layout_marginTop="20dp">
+
+           <AutoCompleteTextView
+               android:id="@+id/autoCompleteTextViewQuestionPriority"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:inputType="none"
+               android:text="priority " />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+           android:id="@+id/tILQuestionAdvantage"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tILQuestionPriority"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginEnd="20dp"
+           android:layout_marginTop="20dp">
+
+           <AutoCompleteTextView
+               android:id="@+id/autoCompleteTextViewQuestionAdvantage"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:inputType="none"
+               android:text="advantge" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/btnGetResult"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Get Result"
+           android:backgroundTint="@color/blue"
+           android:layout_below="@+id/tILQuestionAdvantage"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginTop="30dp"
+
+           />
+
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/result"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/btnGetResult"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginTop="30dp"
+           android:text="Result"
+           android:textSize="18sp"
+           android:textStyle="bold" />
+
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/carName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/result"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginTop="8dp"
+           android:text="Car Name" />
+
+       <androidx.appcompat.widget.AppCompatImageView
+           android:id="@+id/carImage"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_below="@+id/carName"
+           android:layout_alignStart="@+id/lytis"
+           android:layout_marginVertical="8dp"
+           android:src="@mipmap/ic_launcher" />
+
+
+       <!--    <EditText-->
+       <!--        android:id="@+id/amzius"-->
+       <!--        android:layout_width="100dp"-->
+       <!--        android:layout_height="48dp"-->
+       <!--        android:layout_alignParentStart="true"-->
+       <!--        android:layout_centerHorizontal="true"-->
+       <!--        android:layout_marginStart="40dp"-->
+       <!--        android:layout_marginTop="279dp"-->
+       <!--        android:autofillHints=""-->
+       <!--        android:ems="10"-->
+       <!--        android:hint="Amžius"-->
+       <!--        android:inputType="number"-->
+       <!--        android:textColorHint="#004D40"-->
+       <!--        app:layout_constraintEnd_toEndOf="parent"-->
+       <!--        app:layout_constraintHorizontal_bias="0.151"-->
+       <!--        app:layout_constraintStart_toStartOf="parent"-->
+       <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+       <!--    <EditText-->
+       <!--        android:id="@+id/turimasuma"-->
+       <!--        android:layout_width="100dp"-->
+       <!--        android:layout_height="48dp"-->
+       <!--        android:layout_alignParentStart="true"-->
+       <!--        android:layout_alignParentEnd="true"-->
+       <!--        android:layout_marginStart="40dp"-->
+       <!--        android:layout_marginTop="335dp"-->
+       <!--        android:layout_marginEnd="212dp"-->
+       <!--        android:autofillHints=""-->
+       <!--        android:ems="10"-->
+       <!--        android:hint="Turima suma"-->
+       <!--        android:inputType="number"-->
+       <!--        android:textColorHint="#004D40"-->
+       <!--        app:layout_constraintEnd_toEndOf="parent"-->
+       <!--        app:layout_constraintHorizontal_bias="0.919"-->
+       <!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--       app:layout_constraintTop_toTopOf="parent" />-->
+
+       <Button
+           android:id="@+id/button2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginStart="160dp"
+           android:backgroundTint="@color/blue"
+           android:layout_below="@+id/carImage"
+           android:text="@string/pateikti"
+           android:textColor="@color/white"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.425"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+   </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

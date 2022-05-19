@@ -1,0 +1,66 @@
+<resources>
+    <string name="activity1">Activity1</string>
+    <string name="pradžia">Pradžia</string>
+    <string name="Meniu" />
+    <string name="lytis">lytis</string>
+    <string name="vyras">vyras</string>
+    <string name="moteris">moteris</string>
+    <string name="kita">kita</string>
+    <string name="amzius">amzius</string>
+    <string name="turimasuma">turimasuma</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="pateikti">pateikti</string>
+    <string name="nav_header_desc">nav_header_desc</string>
+    <string name="turima_suma_your_budget">Turima suma (your budget)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+
+    <string-array name="budget">
+        <item>0-2000</item>
+        <item>2100-5000</item>
+        <item>5100-15000</item>
+        <item>15100-100000</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>18-25</item>
+        <item>26-45</item>
+        <item>46-100+</item>
+    </string-array>
+
+    <string-array name="user_for_driving">
+        <item>everyday ride, /work</item>
+        <item>to one place  and to go back</item>
+        <item>for vacations</item>
+        <item>Rarely</item>
+    </string-array>
+
+    <string-array name="car_size">
+        <item>big(jeep)</item>
+        <item>medium(coupe)</item>
+        <item>small (hatchback)</item>
+        <item>very small</item>
+    </string-array>
+
+    <string-array name="drive_wheels">
+        <item>front wheels</item>
+        <item>back wheels</item>
+        <item>all four</item>
+        <item>doeant matter</item>
+    </string-array>
+
+    <string-array name="question_priority">
+        <item>comfortable salon</item>
+        <item>beautiful design</item>
+        <item>speed ,power</item>
+        <item>low usage of fuel</item>
+    </string-array>
+
+    <string-array name="question_advantage">
+        <item>hibridas-electrical car</item>
+        <item>heatable seats</item>
+        <item>7 or more seats</item>
+    </string-array>
+
+</resources>
