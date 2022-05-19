@@ -30,37 +30,36 @@
     </string-array>
 
     <string-array name="user_for_driving">
-        <item>everyday ride, /work</item>
-        <item>to one place  and to go back</item>
-        <item>for vacations</item>
-        <item>Rarely</item>
+        <item>Kasdieniam naudojimui</item>
+        <item>Nusigauti iki vieno taško ir atgal(darbas)</item>
+        <item>Kelionėms</item>
+        <item>Retiems išvažiavimams</item>
     </string-array>
 
     <string-array name="car_size">
-        <item>big(jeep)</item>
-        <item>medium(coupe)</item>
-        <item>small (hatchback)</item>
-        <item>very small</item>
+        <item>Didelis(džipas)</item>
+        <item>Vidutinis(kupė)</item>
+        <item>Mažas(hečbekas)</item>
+        <item>Labai mažas</item>
     </string-array>
 
     <string-array name="drive_wheels">
-        <item>front wheels</item>
-        <item>back wheels</item>
-        <item>all four</item>
-        <item>doeant matter</item>
+        <item>Priekiniai</item>
+        <item>Galiniai</item>
+        <item>Visi keturi</item>
     </string-array>
 
     <string-array name="question_priority">
-        <item>comfortable salon</item>
-        <item>beautiful design</item>
-        <item>speed ,power</item>
-        <item>low usage of fuel</item>
+        <item>Patogus salonas</item>
+        <item>Gražus dizainas</item>
+        <item>Greitis ir galia</item>
+        <item>Mažas kuro sunaudojimas</item>
     </string-array>
 
     <string-array name="question_advantage">
-        <item>hibridas-electrical car</item>
-        <item>heatable seats</item>
-        <item>7 or more seats</item>
+        <item>Varomas elektra, hibridas</item>
+        <item>Šildomos sėdynės</item>
+        <item>5+ sėdimos vietos</item>
     </string-array>
 
 </resources>

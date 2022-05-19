@@ -35,13 +35,13 @@ public class Fragment2 extends Fragment {
     private RadioGroup.OnCheckedChangeListener onCheckedChangeListener = (group, checkedId) -> {
         switch (checkedId) {
             case R.id.vyras:
-                // Write your code here
+                // Kodas-ateiciai
                 break;
             case R.id.moteris:
-                // Write your code here
+                // Kodas-ateiciai
                 break;
             case R.id.kita:
-                // Write your code here
+                // Kodas-ateiciai
                 break;
             default:
                 break;
@@ -50,14 +50,13 @@ public class Fragment2 extends Fragment {
 
 
     public Fragment2() {
-        // Required empty public constructor
+        // tuscia
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_2, container, false);
     }
 
@@ -75,10 +74,7 @@ public class Fragment2 extends Fragment {
         RadioGroup radioGroup = view.findViewById(R.id.radioGroup);
         radioGroup.setOnCheckedChangeListener(onCheckedChangeListener);
 
-        Button btnSubmit = view.findViewById(R.id.button2);
-        btnSubmit.setOnClickListener(view1 -> {
-            Navigation.findNavController(view).navigate(R.id.action_fragment2_to_nav_fragment3);
-        });
+
 
         String[] budget = getResources().getStringArray(R.array.budget);
         ArrayAdapter budgetArrayAdapter = new ArrayAdapter(getContext(), R.layout.dropdown_menu, budget);
@@ -151,7 +147,7 @@ public class Fragment2 extends Fragment {
                     carName.setText(c.getName());
                     carImage.setImageResource(c.getImage());
                 }else {
-                    Toast.makeText(getContext().getApplicationContext(), "no result found", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext().getApplicationContext(), "Rezultatų nėra", Toast.LENGTH_SHORT).show();
                 }
 
             }

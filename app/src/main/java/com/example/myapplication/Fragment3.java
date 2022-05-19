@@ -28,14 +28,13 @@ public class Fragment3 extends Fragment implements View.OnClickListener {
     Random random;
 
     public Fragment3() {
-        // Required empty public constructor
+        // Turi but tuscia
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_3, container, false);
     }
 
