@@ -162,25 +162,42 @@ public class Fragment2 extends Fragment {
     private  List<Car> getCarDataSource() {
         List<Car> carsList = new ArrayList<>();
         carsList.add(new Car(
-                "Toyota corolla", R.drawable.img_car_1,
+                "Toyota corolla verso", R.drawable.toyotacorollaverso,
                 new Answer(
-                        "0-2000",
+                        "2100-5000",
                         new String[]{"18-25", "26-45"},
-                        "everyday ride, /work",
-                        "big(jeep)",
-                        "all four",
-                        "comfortable salon",
-                        "hibridas-electrical car")));
-        carsList.add(new Car("Car", R.drawable.img_car_2,
+                        "Kasdieniam naudojimui",
+                        "Didelis(džipas)",
+                        "Priekiniai",
+                        "Patogus salonas",
+                        "Šildomos sėdynės")));
+        carsList.add(new Car("Hyundai Genesis", R.drawable.hyundaigenesis,
                 new Answer(
                         "5100-15000",
                         new String[]{"18-25", "26-45"},
-                        "for vacations",
-                        "medium(coupe)",
-                        "all four",
-                        "beautiful design",
-                        "heatable seats")));
-
+                        "Retiems išvažiavimams",
+                        "Vidutinis(kupė)",
+                        "Galiniai",
+                        "Gražus dizainas",
+                        "Šildomos sėdynės")));
+        carsList.add(new Car("Opel Zafira", R.drawable.opelzafira,
+                new Answer(
+                        "0-2000",
+                        new String[]{"26-45", "46-100+"},
+                        "Kasdieniam naudojimui",
+                        "Didelis(džipas)",
+                        "Priekiniai",
+                        "Mažas kuro sunaudojimas",
+                        "5+ sėdimos vietos")));
+        carsList.add(new Car("BMW 430 Gran Coupe ", R.drawable.bmwgrancoupe,
+                new Answer(
+                        "15100-100000",
+                        new String[]{"18-25", "26-45"},
+                        "Retiems išvažiavimams",
+                        "Vidutinis(kupė)",
+                        "Galiniai",
+                        "Greitis ir galia",
+                        "Šildomos sėdynės")));
         return carsList;
     }
 
